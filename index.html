@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Landing Page Template With Flexbox</title>
+    <title>Samdespion</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+	<script src="https://kit.fontawesome.com/c5e85ac389.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
@@ -20,10 +19,10 @@
 
 	<header>
 		<nav class="sticky-top">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Skills</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
 			<li><a href="#">EN</a></li>
 		</nav>
 	</header>
@@ -31,60 +30,93 @@
 
 <!-- *******************************************************WELCOME SECTION******************************************************* -->
 
-	<section class="hero">
+	<section class="home" id="home">
 		<div class="background-image"></div>
 		<div class="landing-content">
-			<img id="profile-pic" src="assets/img/avataaars.png" alt="profile picture">
-			<h1>Web Developer & Designer</h1>
-			<h3>I design responsive web sites</h3>
-			<a href="resume.html" class="btn" target="_blank">View Resume</a>
+			<img id="home-pic" src="assets/img/Avatar.png" alt="profile picture">
+			<h1>Software Engineer</h1>
+			<a href="resume.html" class="btn" target="_blank">VIEW RESUME</a>
 		</div>
 	</section>
 
+
+<!-- *******************************************************SKILLS******************************************************* -->
+
+<section class="skills" id="skills">
+	<h3 class="title">Skills</h3>
+	<p>I'm a software developer with 4 years experience with the SpringBoot/Angular stack in an Agile environment.</p>
+	<p>Rigorous, I follow Clean Code and Software Craftsmanship best practices.</p>
+	<p>I will be a proactive member of your teams, working on the front and the back end, actively participating in code reviews, challenging and refining business needs.</p>
+
+	<h2>Languages and Frameworks</h2>
+
+	<ul class="grid">
+		<li>
+			<i class="fa-brands fa-angular"></i>
+			<h4>Angular 11</h4>
+			<p>💛💛💛🤍🤍</p>
+		</li>
+		<li>
+			<i class="fa-brands fa-java"></i>
+			<h4>Java 8</h4>
+			<p>💛💛🤍🤍🤍</p>
+		</li>
+		<li>
+			<i>Groovy</i>
+			<h4>-</h4>
+			<p>💛💛💛🤍🤍</p>
+		</li>
+		<li>
+			<i>SQL</i>
+			<h4>Databases query language</h4>
+			<p>💛💛🤍🤍🤍</p>
+		</li>
+	</ul>
+
+	<h2>Languages and Frameworks</h2>
+
+	<ul class="grid">
+		<li>
+			<i class="fa-brands fa-git"></i>
+			<h4>GitLab / GitHub</h4>
+			<p>💛💛💛💛🤍</p>
+		</li>
+		<li>
+			<i class="">BDD</i>
+			<h4>Behavior Driven Development</h4>
+			<p>💛💛💛🤍🤍</p>
+		</li>
+		<li>
+			<i class="">Agile</i>
+			<h4>-</h4>
+			<p>💛💛💛🤍🤍</p>
+		</li>
+		<li>
+			<i class="">TOTO</i>
+			<h4>-</h4>
+			<p>💛💛💛🤍🤍</p>
+		</li>
+	</ul>
+</section>
+
 <!-- *******************************************************PORTFOLIO******************************************************* -->
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<h3 class="title">Portfolio</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
 		<hr>
 
 		<ul class="grid">
-			<li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
+			<li class="small" style="background-image: url(assets/img/Avatar.png);"></li>
 			<li class="large" style="background-image: url(assets/img/island.jpg);"></li>
 			<li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
 			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
-		</div>
-	</section>
-	
-<!-- *******************************************************SKILLS******************************************************* -->
-
-	<section class="skills">
-		<h3 class="title">Features and services</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<hr>
-
-		<ul class="grid">
-			<li>
-				<i class="fa fa-camera-retro"></i>
-				<h4>Responsive</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-cubes"></i>
-				<h4>SEO</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-newspaper-o"></i>
-				<h4>Soft Design</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-		</div>
+		</ul>
 	</section>
 
 <!-- *******************************************************CONTACT******************************************************* -->
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<h3 class="title">Contact</h3>	
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
 		<hr>
@@ -109,22 +141,29 @@
 			<li><a href="#"><i class="fab fa-edge"></i></a></li>
 			<li><a href="#"><i class="fas fa-star-of-david"></i></a></li>
 			<li><a href="#"><i class="fas fa-info"></i></a></li>
-			<li><a href="#"><i class="fab fa-stripe-s"></i></li>
+			<li><a href="#"><i class="fab fa-stripe-s"></i></a></li>
 			<li><a href="#"><i class="fas fa-cross"></i></a></li>
 		</ul>
 	</footer>
 
 <script type="text/javascript">
 	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("header").style.top = "0";
   } else {
     document.querySelector("header").style.top = "-60px";
   }
   prevScrollpos = currentScrollPos;
+}
+window.onclick = function() {
+	if (document.querySelector("header").style.top == "-60px") {
+		document.querySelector("header").style.top = "0";
+	} else {
+		document.querySelector("header").style.top = "-60px";
+	}
 }
 </script>
 
